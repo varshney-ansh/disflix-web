@@ -6,7 +6,7 @@ import TabMenu from '@/components/tabMenu/tabMenu';
 import { AnimeSearhByGenre, GetAnimeByTitleId } from '@/js/animeFind';
 import { notFound } from 'next/navigation';
 import Footer from "@/components/footer/footer";
-import SWatchBtn from '@/components/sWatchBtn/SWatchBtn';
+import SWatchBtn from '@/components/sWatchBtn/sWatchBtn';
 import WatchListBtn from "@/components/watchlistBtn/watchlistBtn";
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';

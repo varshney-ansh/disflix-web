@@ -7,7 +7,7 @@ import MovieList from '@/components/MovieList/MovieList';
 import { getServerSession } from 'next-auth/next';
 import { authOptions } from '@/app/api/auth/[...nextauth]/route';
 import { GetStatusWatch } from "@/js/watchlist";
-import SWatchBtn from '@/components/sWatchBtn/SWatchBtn';
+import SWatchBtn from '@/components/sWatchBtn/sWatchBtn';
 import WatchListBtn from "@/components/watchlistBtn/watchlistBtn";
 
 const DetailComponent = async ({ movie, movies }) => {

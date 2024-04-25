@@ -1,5 +1,5 @@
 'use server'
-import User from "@/js/models";
+import User from "@/js/Models";
 import bcrypt from 'bcryptjs';
 import connectDB from '@/utils/database.js';
 import { generateToken, verifyToken } from "./token";

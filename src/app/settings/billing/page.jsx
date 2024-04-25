@@ -1,5 +1,5 @@
 import Navbar from '@/components/navbar/Navbar';
-import Footer from '@/components/footer/Footer';
+import Footer from '@/components/footer/footer';
 import styles from './billing.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
