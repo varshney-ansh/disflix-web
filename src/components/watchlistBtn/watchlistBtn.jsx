@@ -1,6 +1,10 @@
 'use client'
 import { GetStatusWatch, SaveToWatchlist } from "../../js/watchlist";
+<<<<<<< HEAD
 import SWatchBtn from "@/components/sWatchBtn/sWatchBtn";
+=======
+import SWatchBtn from "@/components/sWatchBtn/SWatchBtn";
+>>>>>>> 84fe7352ed148be2c6cd85d71faa4e306409e3c4
 import styles from './watchbtn.module.css';
 import { useState } from 'react';
 
