@@ -1,0 +1,98 @@
+.container{
+    background-color: #00050d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    gap: 48px;
+}
+
+.bars svg{
+    height: 38px;
+    width: 38px;
+    color: var(--white);
+}
+
+.brand_logo a{
+    display: flex;
+    height: 100%;
+}
+
+.middle{
+    height: 100%;
+}
+
+.bars{
+    display: none;
+}
+
+.right{
+    height: 100%;
+}
+
+.mobileMenu{
+    position: absolute;
+    top: 48px;
+    width: 100%;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    height: 100vh;
+    background-color: var(--navbar-hover);
+}
+
+.brand_logo .mobileMenu a{
+    justify-content: left;
+}
+
+.mobileMenu a{
+    height: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    color: var(--nav-link-color);
+    transition: 0.3s all ease;
+    font-weight: 500;
+    padding: 0px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.mobileMenu a svg{
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobileMenu a:hover{
+    color: var(--white);
+}
+
+@media (max-width: 878px) {
+    .middle{
+        display: none;
+    }
+    
+    .container{
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .bars{
+        display: block;
+    }
+}
+
+@media (max-width: 389px) {
+    .container{
+        gap: 20px !important;
+    }
+}

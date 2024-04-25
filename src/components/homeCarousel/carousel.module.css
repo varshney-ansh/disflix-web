@@ -1,0 +1,130 @@
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: #FFFFFF4C;
+    border-radius: 50%;
+    display: block;
+    transition: all .5s ease-in-out;
+    margin: 0px 16px 0px 0px;
+}
+.bgDark,.container{
+    height: 80vh !important;
+}
+
+.container{
+    background-color: var(--dark-blue-bg);
+    margin: 0px auto;
+    padding: 0px 0px;
+    padding-top: 10vh;
+    width: 100%;
+    
+}
+
+.sliderImage{
+    width: 100%;
+    border-radius: 10px;
+    height: auto !important;
+}
+
+
+.container:hover .nextsArrow,.container:hover .previousArrow{
+    /* scale: 150%; */
+    opacity: 1;
+    pointer-events: all;
+}
+
+.previousArrow{
+    color: var(--nav-link-color);
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    right: 0px;
+    transform: rotateX(180deg);
+    transition: opacity .3s ease-in-out;
+}
+.nextsArrow{
+    color: var(--nav-link-color);
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    opacity: 0;
+    top: 45%;
+    left: 0px;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+
+.sliderContainer{
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    width: 100% !important;
+    height: auto;
+}
+
+
+
+@media (max-width: 730px) {
+    .nextsArrow,.previousArrow{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1241px){
+    .container{
+        height: 75vh !important;
+    }
+}
+
+@media (max-width: 1049px){
+    .container{
+        height: 65vh !important;
+    }
+}
+
+@media (max-width: 951px){
+    .container{
+        height: 60vh !important;
+    }
+}
+
+@media (max-width: 851px) {
+    .container{
+        height: 55vh !important;
+    }
+}
+
+@media (max-width: 690px) {
+    .container{
+        height: 88vh !important;
+    }
+}
+
+@media (max-width: 426px) {
+    .container{
+        height: 30vh !important;
+    }
+}
+
+@media(max-width: 321px){
+    .container{
+        height: 25vh !important;
+    }
+}
+
+@media (max-width: 770px) {
+    .container{
+        height: 30vh !important;
+    }
+}

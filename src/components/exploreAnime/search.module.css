@@ -1,0 +1,33 @@
+.input::placeholder{
+    color: #94A1A6;
+}
+
+.input:focus{
+    outline: 2px solid var(--white);
+}
+
+.input{
+    --border-radius: 8px;
+    background-color: #33373d;
+    background-position: 0;
+    background-repeat: no-repeat;
+    border: none;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    box-shadow: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 27px;
+    line-height: var(--line-height-sub-header);
+    transition: none;
+    width: 90%;
+    text-transform: capitalize;
+    height: 64px;
+    outline: none;
+    padding-left: 64px;
+}
+

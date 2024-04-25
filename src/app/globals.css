@@ -1,0 +1,63 @@
+:root {
+    --dark-black: #0F1014;
+    --nav-link-color: #AAAAAA;
+    --dark-blue-bg: #00050D;
+    --white: #fff;
+    --light-blue: #0e2d92;
+    --nex-blue: #79b8f3;
+    --form-a-color: #0066c0;
+    --expandable-button-bg: #33373d;
+    --nex-blue-hover: #90dffe;
+    --form-btn-orange: #c45500;
+    --slider-padding: 5rem;
+    --main-color: #0b0b0b;
+    --black: #000;
+    --navbar-hover: #191E25;
+    --light-white-bg: #f2f4f6;
+}
+
+* {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.slick-slider{
+    position: relative;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.slick-list:hover ~ .activeUta{
+    scale: 106%;
+}
+
+li.slick-active span i{
+    background-color: var(--white) !important;
+
+}
+
+.dots{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 20px 0px;
+}
+
+.dots li::marker{
+    content: none;
+}
+
+.slick-slider.slick-initialized{
+    height: 100%;
+}
+
+.slick-list{
+    height: 100%;
+}
+

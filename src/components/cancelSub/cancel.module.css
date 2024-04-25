@@ -1,0 +1,133 @@
+.container{
+    background-color: var(--light-white-bg);
+    min-height: calc(100vh - 48px);
+    margin-top: 48px;
+    -webkit-font-smoothing: antialiased;
+    padding: 0 calc(3vw + 5px);
+}
+
+.content{
+    max-width: 560px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 40px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.heading{
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: bolder;
+}
+
+.para{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.form{
+    display: flex;
+    padding: 20px 28px;
+    background-color: var(--white);
+    flex-direction: column;
+    gap: 20px;
+    border: 2px solid var(--light-white-bg);
+    border-radius: 5px;
+}
+
+.form ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form ul li{
+    font-size: 18px;
+    line-height: 24px;
+    word-wrap: break-word;
+    font-weight: 400;
+}
+
+.btns{
+    display: inline-flex;
+    gap: 20px;
+}
+
+.btns button{
+    background-color: #252e39;
+    color: var(--white);
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    line-height: 20px;
+    margin-top: 0;
+    padding: 14px 20px;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: all .2s ease-out;
+    vertical-align: top;
+}
+
+.btns button:hover{
+    background-color: #394758;
+}
+
+.btns a{
+    background-color: var(--light-white-bg);
+    color: #000;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 17px;
+    box-shadow: inset 0 0 0 1px #c4cacf;
+    line-height: 20px;
+    border: 2px solid var(--light-white-bg);
+    margin-top: 0;
+    padding: 14px 20px;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: all .2s ease-out;
+    vertical-align: top;
+}
+
+.btns a:hover{
+    background: var(--white);
+}
+
+@media (max-width: 460px) {
+    .btns{
+        width: 100% !important;
+        display: flex !important;
+        justify-content: space-around !important;
+        align-items: center !important;
+        flex-direction: column !important;
+        gap: 10px !important;
+    }
+
+    .btns button{
+        width: 100%;
+    }
+
+    .btns a{
+        width: 100%;
+        text-align: center;
+    }
+
+    .heading h2{
+        font-size: 24px;
+    }
+
+    .form ul li{
+        font-size: 16px;
+    }
+}

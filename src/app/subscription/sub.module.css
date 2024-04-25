@@ -1,0 +1,176 @@
+
+
+.content{
+    width: 88%;
+    max-width: 560px;
+    margin: 0px auto;
+    padding: 20px 25px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+}
+
+.heading{
+    font-size: 30px;
+    word-wrap: break-word;
+    font-weight: 600;
+    color: #333;
+    direction: ltr;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    margin: 0 0 0.4em;
+}
+
+.button{
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 12px;
+    box-sizing: border-box;
+    padding: 12px;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    min-height: 107px;
+    max-height: 107px;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+    transition: box-shadow 100ms ease-in-out 0s;
+    position: relative;
+}
+
+.buttons{
+    display: flex;
+    margin-top: 38px;
+    flex-direction: row;
+    gap: 8px;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button.active{
+    border-right-color: rebeccapurple;
+    border-bottom-color: rebeccapurple;
+    border-left-color: rebeccapurple;
+    color: white;
+    background: radial-gradient(140.76% 131.96% at 100% 100%, rgb(109, 59, 227) 0%, rgba(74, 42, 150, 0.5) 73.57%, rgba(74, 42, 150, 0) 100%), rgb(29, 82, 157);
+    border-top-style: initial;
+    border-top-color: initial;
+}
+
+.button h2{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin: 0px;
+}
+
+.button sub{
+    font-size: 0.625rem;
+    font-weight: 500;
+    line-height: 1;
+    color: rgb(103, 103, 103);
+    bottom: 0px;
+}
+
+.button .svg{
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.button.active sub{
+    color: #fff;
+}
+
+.button.active .svg{
+    transform: scale(0.9);
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    opacity: 1;
+}
+
+.otherContent{
+    margin: 16px auto;
+    width: 100%;
+}
+
+.label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12.5px 0px;
+    margin: 0px;
+    -webkit-box-align: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.4);
+}
+
+.label h2{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19px;
+    color: rgb(118, 118, 118);
+    flex: 0 0 40%;
+}
+
+.label span{
+    flex: 0 0 calc(60% - 13px);
+    padding-left: 13px;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.content p{
+    color: #737373;
+    font-size: 13px;
+    line-height: 19px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.subBtn button{
+    width: 100%;
+    height: 56px;
+    font-size: 24px;
+    letter-spacing: normal;
+    background: rgba(0, 0, 25);
+    color: #fff;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 25);
+    font-weight: bold;
+    cursor: pointer;
+
+    line-height: 1;
+    transition-duration: 250ms;
+    transition-property: background-color, border-color;
+    transition-timing-function: cubic-bezier(0.9, 0, 0.51, 1);
+}
+
+.subBtn{
+    margin: 20px 0px;
+}
+
+.subBtn button:hover{
+    transition-timing-function: cubic-bezier(0.5, 0, 0.1, 1);
+    background: transparent;
+    color: rgba(0, 0, 25);
+}
+
+.subBtn.active button{
+    background: #fff;
+}
+
+.loading svg{ 
+    animation: animate 0.8s infinite linear;
+    width: 30px;
+    height: 30px;
+}
+
+@keyframes animate {
+    100%{
+        transform: rotate(360deg);
+    }
+}

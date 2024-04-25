@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--dark-blue-bg);
+    height: 68px;
+    padding-right: 45px;
+    padding-left: 45px;
+}
+
+.backArrow button{
+    outline: none;
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    color: #aaa;
+    transition: color .2s ease-in-out;
+    cursor: pointer;
+}
+
+.backArrow button h2{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.backArrow button:hover{
+    color: var(--white);
+}
+
+.backArrow button svg{
+    transform: rotate(180deg);
+}

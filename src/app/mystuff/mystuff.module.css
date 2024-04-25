@@ -1,0 +1,29 @@
+.container {
+    position: relative;
+    min-height: calc(100vh - 48px);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    background: var(--dark-blue-bg);
+    margin-top: 48px;
+    padding: 60px calc(3.5vw + 20px) 40px;
+    gap: 48px;
+}
+
+.searchTitle span{
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 24px;
+    color: var(--white);
+}
+
+/* results div  */
+
+.resultsDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0px 24px;
+}

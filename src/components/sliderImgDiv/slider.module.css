@@ -1,0 +1,418 @@
+.dot{
+    width: 8px;
+    height: 8px;
+    background-color: #FFFFFF4C;
+    border-radius: 50%;
+    display: block;
+    transition: all .5s ease-in-out;
+    margin: 0px 16px 0px 0px;
+}
+.bgDark,.container{
+    height: 80vh !important;
+}
+
+.container{
+    background-color: var(--dark-blue-bg);
+    margin: 0px auto;
+    padding: 0px 0px;
+    padding-top: 10vh;
+    width: 100%;
+    
+}
+
+.sliderImage{
+    width: 100%;
+    border-radius: 10px;
+    height: auto !important;
+}
+
+
+.container:hover .nextsArrow,.container:hover .previousArrow{
+    /* scale: 150%; */
+    opacity: 1;
+    pointer-events: all;
+}
+
+.detCon:hover{
+    color: #000;
+}
+
+.bgDark{
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    /* background: linear-gradient(90deg,rgba(0,0,0,.8) 19.65%,rgba(0,0,0,0) 49.93%); */
+    /* background: linear-gradient(90deg,#00050d 42.65%,rgba(0,5,13,0) 50.93%);; */
+    background: linear-gradient(85deg, #00050d, rgba(0, 5, 13, .991) 6.67%, rgba(0, 5, 13, .964) 13.33%, rgba(0, 5, 13, .918) 20%, rgba(0, 5, 13, .853) 26.67%, rgba(0, 5, 13, .768) 33.33%, rgba(0, 5, 13, .668) 40%, rgba(0, 5, 13, .557) 46.67%, rgba(0, 5, 13, .443) 53.33%, rgba(0, 5, 13, .332) 60%, rgba(0, 5, 13, .232) 66.67%, rgba(0, 5, 13, .147) 73.33%, rgba(0, 5, 13, .082) 80%, rgba(0, 5, 13, .036) 86.67%, rgba(0, 5, 13, .009) 93.33%, rgba(0, 5, 13, 0));
+    width: 100%;
+}
+.previousArrow{
+    color: var(--nav-link-color);
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    top: 45%;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    right: 0px;
+    transform: rotateX(180deg);
+    transition: opacity .3s ease-in-out;
+}
+.nextsArrow{
+    color: var(--nav-link-color);
+    width: 33px;
+    height: 33px;
+    position: absolute;
+    opacity: 0;
+    top: 45%;
+    left: 0px;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+/* .nextsArrow:hover,.previousArrow:hover{
+    color: #fff;
+    opacity: 1 !important;
+    transition: opacity 0.2s ease-in-out !important;
+} */
+
+
+.sliderImageDiv{
+    width: 90%;
+    position: relative;
+    border-radius: 10px;
+    height: auto;
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 20vh;
+    /* width: 280px; */
+}
+.imgContainer{
+    width: 220px;
+    height: 90px;
+}
+/* .content{
+    position: absolute;
+} */
+.imgContainer{
+    /* z-index: 99; */
+    position: relative;
+    /* background-color: green; */
+}
+.sliderContainer{
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    width: 100% !important;
+    height: auto;
+}
+
+.playbtnm{
+    gap: 10px;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.playbtnm span{
+    transition: all .2s ease-in-out;
+    color: #00050d;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* width: 80px;
+    height: 80px; */
+}
+
+.playbtnm span:hover{
+    color: #4d4d4d;
+    scale: 105%;
+}
+.playbtnm h2{
+    font-size: 20px;
+    color: #fff;
+    cursor: default;
+    margin-right: 10px;
+}
+.watchlistCon button div{
+    width: 33px;
+    height: 33px;
+}
+
+.watchlistCon button{
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--expandable-button-bg);
+}
+
+.watchlistCon button:hover{
+    scale: 105%;
+    background-color: var(--white);
+    color: #00050d;
+}
+.detConn{
+    width: 33px;
+    color: white;
+    height: 33px;
+}
+.detCon{
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    color: var(--white);
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--expandable-button-bg);
+}
+.detConn:hover{
+    color: #00050d;
+}
+.detCon:hover{
+    scale: 105%;
+    background-color: var(--white);
+    color: #00050d;
+}
+
+.ua{
+    margin: 20px 0px;
+    display: inline-block;
+    color: var(--white);
+}
+.ua span:first-child{
+    background-color: var(--expandable-button-bg);
+    border-radius: 8px;
+    font-size: 16px;
+    margin: 0px 10px 0px 0px;
+    padding: 4px 8px;
+}
+.ua span{
+    margin: 0px 5px;
+    font-size: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* text-transform: uppercase; */
+    white-space: nowrap;
+}
+.other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.playBtn svg{
+    width: 40px;
+    height: 40px;
+}
+@media (max-width: 1231px) {
+    .content{
+        top: 0;
+        margin: 20px 10px;
+    }
+}
+
+@media (max-width: 730px) {
+    .imgContainer{
+        width: 160px;
+        height: 64px;
+    }
+    .ua span:first-child{
+        margin-right: 5px;
+    }
+    .ua span{
+        margin: 10px 4px;
+        font-size: 16px;
+    }
+    .nextsArrow,.previousArrow{
+        display: none;
+    }
+}
+
+@media (max-width: 426px) {
+    .playBtn svg{
+        width: 30px;
+        height: 30px;
+    }
+    .playBtn{
+        padding: 12px !important;
+    }
+    .detConn{
+        width: 24px;
+        height: 24px;
+    }
+    .detCon{
+        padding: 12px !important;
+    }
+    .watchlistCon button div{
+        width: 24px;
+        height: 24px;
+    }
+    .watchlistCon button{
+        padding: 12px;
+    }
+    .ua span{
+        display: none;
+    }
+    .ua span:first-child{
+        display: block;
+    }
+}
+
+@media (max-width: 326px) {
+    .detCon,.other{
+        display: none;
+    }
+}
+
+@media (max-width: 1241px){
+    .container,.bgDark{
+        height: 75vh !important;
+    }
+}
+
+@media (max-width: 1049px){
+    .container,.bgDark{
+        height: 65vh !important;
+    }
+}
+
+@media (max-width: 951px){
+    .container,.bgDark{
+        height: 60vh !important;
+    }
+    .playBtn svg{
+        height: 30px;
+        width: 30px;
+    }
+    .detConn{
+        width: 24px;
+        height: 24px;
+    }
+    .detCon{
+        padding: 12px !important;
+    }
+    .watchlistCon button div{
+        width: 24px;
+        height: 24px;
+    }
+    .watchlistCon button{
+        padding: 12px;
+    }
+}
+
+@media (max-width: 851px) {
+    .container,.bgDark{
+        height: 55vh !important;
+    }
+}
+
+@media (max-width: 690px) {
+    .container,.bgDark{
+        height: 88vh !important;
+    }
+}
+/* @media (max-width: 871px) {
+    .container,.bgDark{
+        height: 110vh !important;
+    }
+} */
+
+@media (max-width: 769px) {
+    .imgContainer{
+        width: 160px;
+        height: 60px;
+    }
+}
+
+@media (max-width: 426px) {
+    .imgContainer{
+        width: 85px;
+        height: 35px;
+    }
+    .content{
+        margin: 20px 10px;
+        top: 2vh;
+    }
+    .ua span{
+        font-size: 14px ;
+    }
+    .other{
+        display: none;
+    }
+    .ua{
+        display: none;
+    }
+    .playbtnm{
+        margin: 10px 0px;
+    }
+    .playBtn svg{
+        width: 20px;
+        height: 20px;
+    }
+    .playBtn{
+        padding: 12px !important;
+    }
+    .container,.bgDark{
+        height: 30vh !important;
+    }
+}
+
+@media(max-width: 321px){
+    .imgContainer{
+        width: 60px;
+        height: 25px;
+    }
+    .playbtnm{
+        margin: 7px 0px;
+        gap: 5px;
+    }
+    .playBtn svg{
+        width: 15px;
+        height: 15px;
+    }
+    .playBtn{
+        padding: 9px !important;
+    }
+    .playbtnm h2{
+        font-size: 16px;
+    }
+    .container,.bgDark{
+        height: 25vh !important;
+    }
+}
+
+@media (max-width: 770px) {
+    .container,.bgDark{
+        height: 30vh !important;
+    }
+}

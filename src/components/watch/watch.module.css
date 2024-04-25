@@ -1,0 +1,11 @@
+.container{
+    max-height: calc(100vh - 68px) !important;
+    width: 100%;
+    overflow: hidden;
+}
+
+.videoPlayerContainer{
+    background: var(--dark-blue-bg);
+    height: calc(100vh - 68px) !important;
+    width: 100vw;
+}

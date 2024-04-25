@@ -1,0 +1,27 @@
+.iconn{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 10px 10px; */
+    background-color: var(--expandable-button-bg);
+}
+
+.iconn svg{
+    width: 36px;
+    height: 36px;
+    color: var(--white);
+}
+
+.iconn:hover{
+    background-color: var(--white);
+    color: #000;
+    transform: scale(1.05);
+}
+.iconn svg:hover{
+    color: #000;
+}

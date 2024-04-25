@@ -1,0 +1,21 @@
+.nav{
+    border-bottom: 1px solid #e6e6e6;
+    padding: 0px calc(3.5vw + 5px);
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn a{
+    font-size: 19px;
+    color: #333;
+    font-weight: bold;
+    line-height: 64px;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.btn a:hover{
+    text-decoration: underline;
+}

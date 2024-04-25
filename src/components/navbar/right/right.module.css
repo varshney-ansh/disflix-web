@@ -1,0 +1,65 @@
+.profileImg{
+    margin: 0px 5px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+.container a svg{
+    height: 32px;
+    width: 32px;
+    color: var(--nav-link-color);
+    transition: all 0.2s ease-in-out;
+}
+
+.rightlink{
+    height: 100%;
+}
+
+.container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 16px;
+}
+
+.container a:hover{
+    background: var(--navbar-hover);
+}
+
+
+.container a:hover svg{
+    color: var(--white);
+}
+
+.btn{
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    padding: 0px 16px;
+    line-height: 24px;
+}
+
+.btn:hover{
+    background-color: var(--navbar-hover);
+    color: var(--white);
+}
+
+
+@media (max-width: 405px) {
+    .btn{
+        font-size: 16px;
+        padding: 0px 8px !important;
+    }
+}

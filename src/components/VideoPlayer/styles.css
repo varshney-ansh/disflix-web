@@ -1,0 +1,313 @@
+@font-face {
+  font-family: amazon ember;
+  font-style: normal;
+  font-weight: 400;
+  src: local('Amazon Ember'), url('../../app/fonts/Amazon\ Ember.woff') format('woff')
+}
+
+@font-face {
+  font-family: amazon ember;
+  font-style: normal;
+  font-weight: 300;
+  src: local('Amazon Ember'), url('../../app/fonts/Amazon\ Ember\ Light.woff') format('woff')
+}
+
+@font-face {
+  font-family: amazon ember;
+  font-style: normal;
+  font-weight: 250;
+  src: local('Amazon Ember'), url('../../app/fonts/Amazon\ Ember\ Thin.woff') format('woff')
+}
+
+@font-face {
+  font-family: amazon ember;
+  font-style: normal;
+  font-weight: 500;
+  src: local('Amazon Ember'), url('../../app/fonts/Amazon\ Ember\ Medium.woff') format('woff')
+}
+
+@font-face {
+  font-family: amazon ember;
+  font-style: normal;
+  font-weight: 700;
+  src: local('Amazon Ember'), url('../../app/fonts/Amazon\ Ember\ Bold.woff') format('woff')
+}
+
+@font-face {
+  font-family: amazon ember;
+  font-style: normal;
+  font-weight: 800;
+  src: local('Amazon Ember'), url('../../app/fonts/Amazon\ Ember\ Heavy.woff') format('woff')
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.shaka-video-container .material-icons-round {
+  font-size: 25px;
+}
+
+#video-container {
+  background-color: black;
+  width: 100vw;
+  max-height: calc(100vh - 68px);
+  font-family: 'Amazon Ember', sans-serif !important;
+  position: relative;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+}
+
+.shaka-video-container * {
+  font-family: 'Amazon Ember', sans-serif !important;
+}
+
+.shaka-resolution-button {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+}
+
+.shaka-vertical-volume-container {
+  position: absolute !important;
+  top: 10px !important;
+  right: 40px !important;
+}
+
+.shaka-vertical-volume-container .shaka-volume-bar-container {
+  left: -35px;
+  opacity: 0;
+  order: 0;
+  position: absolute !important;
+  top: 80px !important;
+  transform: rotate(270deg) !important;
+  transition: all .3s ease-in-out .1s !important;
+  width: 100px;
+}
+
+.shaka-settings-menu {
+  position: absolute !important;
+  top: 50px !important;
+  background-color: #454545;
+  right: 20px !important;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 4px !important;
+  padding-top: 3px;
+}
+
+.shaka-ad-position-span{
+  color: #ffd62c;
+  content: "Ad";
+}
+
+.shaka-ad-position-span, .shaka-ad-counter-span{
+  font-size: 18px !important;
+}
+
+.shaka-ad-controls{
+  position: absolute !important;
+  top: 30px !important;
+  align-items: center;
+  border-radius: 20px;
+  padding: 8px 12px;
+  background: rgb(51, 55, 61);
+  justify-content: center;
+}
+
+.shaka-ad-controls{
+  padding-bottom: 8px !important;
+}
+
+.shaka-back-to-overflow-button {
+  display: none !important;
+}
+
+.shaka-settings-menu {
+  max-height: 130px !important;
+  min-width: 160px !important;
+}
+
+.shaka-settings-menu button{
+  color: #bbb !important;
+  transition: color 0.1s ease-in-out;
+}
+
+.shaka-settings-menu button:hover {
+  color: #fff !important;
+  background: transparent !important;
+}
+.material-icons-round , .shaka-vertical-volume-container{
+  opacity: 0.7 !important;
+}
+
+.shaka-ad-markers {
+  background: rgba(0 0 0 / 70%) !important;
+}
+
+
+.shaka-forward-ten-button {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-48%);
+  right: 30%;
+  opacity: 0.5 !important;
+  font-size: 65px !important;
+}
+
+.shaka-rewind-ten-button {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-48%);
+  opacity: 0.5 !important;
+  left: 30%;
+  font-size: 65px !important;
+}
+
+.shaka-rewind-ten-button, .shaka-forward-ten-button{
+  color: #bbbbbb40 !important;
+  transition: all 0.2s ease-in-out;
+}
+
+.shaka-rewind-ten-button:hover, .shaka-forward-ten-button:hover{
+  color: #fff !important;
+}
+.shaka-spinner {
+  filter: none !important;
+}
+
+.shaka-spinner-path {
+  stroke: var(--white) !important;
+}
+
+.shaka-current-time {
+  font-family: 'Amazon Ember', sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 300 !important;
+  opacity: 0.5 !important;
+}
+.shaka-video-container .material-icons-round {
+  font-family: "Material Symbols Sharp" !important;
+}
+
+
+.shaka-play-button[icon=play] {
+  box-shadow: none !important;
+  background: transparent no-repeat center !important;
+  background-size: cover !important;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NyIgaGVpZ2h0PSI2NyIgZmlsbD0ibm9uZSIgdmlld0JveD0iMCAwIDY3IDY3Ij48cGF0aCBmaWxsPSIjZmZmIiBkPSJNMjAuMjggOS42NWMtMi4yMDUtMS4yNjgtNC4wMjYtLjIyOC00LjAyNiAyLjMwN3Y0My44MDVjMCAyLjUzNSAxLjgyIDMuNTc0IDQuMDI3IDIuMzA3bDM4LjQ3MS0yMS45MDNhMi41NTYgMi41NTYgMCAwIDAgMS4wOTQtLjkzNSAyLjUxNCAyLjUxNCAwIDAgMCAwLTIuNzQzIDIuNTU2IDIuNTU2IDAgMCAwLTEuMDkzLS45MzZMMjAuMjggOS42NXoiLz48L3N2Zz4=') !important;
+}
+
+.shaka-play-button{
+  padding: calc(5% / 2) !important;
+}
+
+.shaka-play-button[icon=pause] {
+  box-shadow: none !important;
+  background: transparent no-repeat center !important;
+  background-image: url('data:image/svg+xml,<svg%20fill%3D"%23ffffff"%20height%3D"70"%20viewBox%3D"0%200%2024%2024"%20width%3D"70"%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg">%0A%20%20%20%20<path%20d%3D"M6%2019h4V5H6v14zm8-14v14h4V5h-4z"%2F>%0A%20%20%20%20<path%20d%3D"M0%200h24v24H0z"%20fill%3D"none"%2F>%0A<%2Fsvg>') !important;
+}
+
+/* ads css */
+/* .shaka-client-side-ad-container, .shaka-server-side-ad-container{
+  z-index: 2;
+} */
+.shaka-client-side-ad-container div{
+  width: 100% !important;
+  height: 100% !important;
+}
+.shaka-controls-container[ad-active="true"] .shaka-play-button-container, .shaka-controls-container[ad-active="true"] .shaka-forward-ten-button, .shaka-controls-container[ad-active="true"] .shaka-rewind-ten-button{
+  display: none;
+  pointer-events: none;
+}
+.shaka-controls-container[ad-active="true"] {
+  pointer-events: none;
+}
+.shaka-controls-container[ad-active="true"] .shaka-bottom-controls {
+  pointer-events: auto;
+}
+.shaka-video-container[shaka-controls="true"] .shaka-client-side-ad-container iframe, .shaka-video-container[shaka-controls="true"] .shaka-server-side-ad-container iframe {
+  height: 100% !important;
+  width: 100% !important;
+}
+.shaka-server-side-ad-container:not([ad-active="true"]) {
+  pointer-events: none;
+}
+.shaka-controls-container[ad-active="true"]{
+  pointer-events: none;
+}
+.shaka-controls-container[ad-active="true"] .shaka-current-time{
+  display: none;
+}
+.shaka-controls-container:not([ad-active="true"]){
+  pointer-events: auto;
+}
+
+.shaka-controls-container[ad-active="true"] .shaka-fast-foward-container{
+  pointer-events: none;
+}
+
+.shaka-controls-container:not([ad-active="true"]) .shaka-fast-foward-container{
+  pointer-events: auto;
+}
+
+.shaka-controls-container[ad-active="true"] .shaka-rewind-container{
+  pointer-events: none;
+}
+
+.shaka-controls-container:not([ad-active="true"]) .shaka-rewind-container{
+  pointer-events: auto;
+}
+
+.shaka-controls-container:not([ad-active="true"]) .shaka-current-time{
+  display: block;
+}
+.shaka-ad-controls {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  padding-bottom: 1%;
+}
+.shaka-ad-controls button, .shaka-ad-controls div {
+  color: white;
+  font-size: initial;
+}
+.shaka-ad-counter, .shaka-ad-position {
+  text-shadow: 1px 1px 4px black;
+}
+.shaka-ad-controls .shaka-ad-position:not(.shaka-hidden) + .shaka-ad-counter {
+  margin-left: 0.75em;
+}
+.shaka-skip-ad-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.shaka-skip-ad-button {
+  padding: 5px 15px;
+  background: #000000;
+  border: none;
+  cursor: pointer;
+}
+.shaka-skip-ad-button:disabled {
+  background: #000000;
+}
+.shaka-skip-ad-counter {
+  padding: 5px;
+  background: #000000;
+  margin: 0;
+}
+
+
+/* end  */
+
+@media (max-width: 450px) {
+  .shaka-rewind-ten-button, .shaka-forward-ten-button{
+      font-size: 45px !important;
+  }
+
+  .shaka-play-button{
+    padding: calc(10% / 2) !important;
+  }
+}

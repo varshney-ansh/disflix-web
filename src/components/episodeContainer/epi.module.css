@@ -1,0 +1,116 @@
+.episodeContainer{
+    display: flex;
+    box-sizing: content-box;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 24px;
+    justify-content: space-between;
+    width: 95%;
+    max-width: 1300px;
+    transition: all 0.2s ease-in-out;
+}
+
+.episodeContainer:hover{
+    background-color: #191e25;
+}
+
+.episodeContainer{
+    padding: 28px 28px 32px 28px;
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+.rightDiv a{
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+
+.rightDiv img{
+    width: auto !important;
+    position: unset !important;
+    max-height: 185px !important;
+    border-radius: 8px;
+}
+
+.leftDiv{
+    height: 100%;
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+
+.episodeName h2{
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: .02em;
+    line-height: 27px;
+}
+
+.episodeDetails{
+    display: inline-flex;
+    gap: 16px;
+    font-size: 18px;
+    color: var(--nav-link-color);
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.ua{
+    padding: 3px 7px;
+    background-color: var(--expandable-button-bg);
+    color: var(--white);
+    border-radius: 3px;
+    line-height: 16px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+
+.descs p{
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--nav-link-color);
+    font-weight: 500;
+}
+
+@media (max-width: 845px) {
+    .episodeName h2{
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .episodeDetails span{
+        font-size: 16px;
+    }
+
+    .ua{
+        font-size: 14px;
+    }
+
+    .descs p{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .leftDiv{
+        gap: 12px;
+    }
+}
+
+
+@media (max-width: 615px) {
+    .episodeContainer{
+        flex-direction: column;
+        width: 90%;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 390px) {
+    .ua{
+        display: none;
+    }
+}

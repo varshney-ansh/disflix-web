@@ -1,0 +1,32 @@
+.container{
+    background-color: #fff;
+    box-shadow: 0 0 0 4px #fcf4f4 inset;
+    -webkit-text-size-adjust: 100%;
+    border-radius: 8px;
+    border: 1px solid #c40000;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 14px 18px;
+    /* max-width: 348px; */
+}
+
+.svgerror{
+    margin-right: 14px;
+}
+
+.content h4{
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.255;
+    color: #c40000;
+}
+
+.content span{
+    color: #111;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: -webkit-match-parent;
+}

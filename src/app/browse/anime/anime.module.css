@@ -1,0 +1,9 @@
+.container {
+    position: relative;
+    min-height: calc(100vh - 250px);
+    overflow-x: hidden;
+    display: block;
+    color: var(--white);
+    background: var(--dark-blue-bg);
+    padding: 0 calc(3.5vw + 5px);
+}

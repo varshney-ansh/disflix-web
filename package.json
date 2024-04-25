@@ -1,0 +1,41 @@
+{
+  "name": "disflix",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@aws-sdk/cloudfront-signer": "^3.523.0",
+    "@stripe/react-stripe-js": "^2.5.1",
+    "@stripe/stripe-js": "^3.0.7",
+    "aws-cloudfront-sign": "^3.0.2",
+    "bcryptjs": "^2.4.3",
+    "cookies": "^0.9.1",
+    "cryptr": "^6.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.2.1",
+    "next": "^14.1.4",
+    "next-auth": "^4.24.6",
+    "next-crypto": "^1.0.8",
+    "nodemailer": "^6.9.11",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.30.2",
+    "sass": "^1.71.1",
+    "shaka-player": "^4.7.11",
+    "shaka-player-ui-controls": "^1.0.11",
+    "sharp": "^0.33.3",
+    "slick-carousel": "^1.8.1",
+    "stripe": "^14.20.0",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.18",
+    "eslint": "^8",
+    "eslint-config-next": "^14.1.4"
+  }
+}
