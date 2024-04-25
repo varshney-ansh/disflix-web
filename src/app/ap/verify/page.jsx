@@ -8,8 +8,6 @@ const VerifyPage = async({ searchParams: {token}}) =>{
     const res = await verifyWithCredentials(token);
     if(res?.msg == 'Success'){
         succeed = true;
-    }else{
-        succeed = false;
     }
 
     return(
