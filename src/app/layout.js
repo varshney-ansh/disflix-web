@@ -46,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <meta name="google-adsense-account" content="ca-pub-6162236678836672" />
+        <meta name="google-adsense-account" content="ca-pub-4033118622575832" />
         <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
