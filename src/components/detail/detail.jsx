@@ -14,14 +14,15 @@ const DetailComponent = async ({ movie, movies }) => {
     const session = await getServerSession(authOptions);
     let status = false;
     let watchShow;
+    let name, email;
 
     if (session == null) {
         watchShow = false;
     }
 
     if (session != null) {
-        const name = session.user.name;
-        const email = session.user.email;
+        name = session.user.name;
+        email = session.user.email;
         watchShow = true;
     }
 
