@@ -14,6 +14,19 @@ export async function GetAnimeByTitleId(titleId){
     }
 }
 
+export async function GetAnimePosterByTitleId(titleId){
+    try {
+        const anime = Anime.findOne({titleId: titleId})
+        if (!anime) {
+            return {msg: "SearchFailedByTitle"}
+        }
+        const poster = anime.posterUrl;
+        return poster;
+    } catch (error) {
+        throw new Error(error)
+    }
+}
+
 export async function AnimeSearchQuery(query){
     connectDB();
     try{

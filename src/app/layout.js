@@ -39,6 +39,7 @@ const disflixFont = localFont({
 
 export const metadata = {
   title: "Disflix India - Watch Movies Online, Watch Anime Online, Watch TV Shows Online",
+  metadataBase: new URL('https://disflix.in/'),
   description: "Watch Disflix movies & TV shows online or stream right to your PC, Mac, mobile, tablet and laptop.",
 };
 
