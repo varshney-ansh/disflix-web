@@ -12,10 +12,18 @@ import WatchListBtn from "@/components/watchlistBtn/watchlistBtn";
 
 const DetailComponent = async ({ movie, movies }) => {
     const session = await getServerSession(authOptions);
-    const name = session.user.name;
-    const email = session.user.email;
-
     let status = false;
+    let watchShow;
+
+    if(session == null){
+        watchShow = false;
+    }
+    
+    if(session != null){
+        const name = session.user.name;
+        const email = session.user.email;
+        watchShow = true;
+    }
 
     const alreadyAdded = await GetStatusWatch({ titleId: movie.titleId, email, content: "Movie" });
     if (alreadyAdded.length > 0) {
@@ -82,7 +90,7 @@ const DetailComponent = async ({ movie, movies }) => {
                                     <Link href='/' className={styles.buy}><span>More purchase</span> <span>options</span></Link>
                                 </div>
                             </div>
-                            <div className={styles.smBtnContainer}>
+                            <div className={`${styles.smBtnContainer}`} style={ watchShow ? {} : {display: 'none'}}>
                                 {status ? (
                                         <SWatchBtn movie={movie} name={name} email={email} content="Movie" />
                                 ) : (<WatchListBtn movie={movie} name={name} email={email} content="Movie" />)}
