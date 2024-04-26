@@ -355,9 +355,9 @@
         flex-direction: column;
     }
 
-    .smBtnContainer{
+    /* .smBtnContainer{
         display: none;
-    }
+    } */
 }
 
 @media (max-width: 839px) {
@@ -508,6 +508,25 @@
 @media (max-width: 501px) {
     .darkbottom{
         height: 48vh;
+    }
+}
+
+@media (max-width: 496px) {
+    .content{
+        top: 30vh;
+    }
+}
+
+@media (max-width: 477px) {
+    .contents{
+        min-height: 100vh;
+    }
+    .buttons{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .smBtnContainer{
+        margin-left: 8px;
     }
 }
 

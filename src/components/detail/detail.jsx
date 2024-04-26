@@ -95,10 +95,11 @@ const DetailComponent = async ({ movie, movies }) => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.movieList}>
+                    <MovieList heading="Customers also watched" movies={movies} />
+                </div>
             </div>
-            <div className={styles.movieList}>
-                <MovieList heading="Customers also watched" movies={movies} />
-            </div>
+            
             <Footer />
         </div>
     )
