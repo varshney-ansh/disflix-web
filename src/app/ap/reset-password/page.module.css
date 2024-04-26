@@ -4,6 +4,8 @@
     align-items: center;
     min-height: 90vh;
     -webkit-text-size-adjust: 100%;
+    margin: 0 auto;
+    width: 90%;
 }
 
 .brandLogo{

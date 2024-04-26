@@ -39,11 +39,16 @@ export async function verifyWithCredentials(token){
     try {
         const { user } = verifyToken(token)
         const userExist = await User.findOne({email: user.email});
-        if(userExist) return {msg: 'Success'}
+        if(userExist) return {msg: 'Oops! Email verification link has been expired. Try Again.'}
 
         const newUser = new User(user);
-        await newUser.save();
-        
+        const save = await newUser.save();
+        if(save){
+            return {msg: 'Your email address has successfull been verified. Thank you for joining disflix.'}
+        }
+        else{
+            return {msg: 'Something went wrong'}
+        }
 
     } catch (error) {
         throw new Error(error);
