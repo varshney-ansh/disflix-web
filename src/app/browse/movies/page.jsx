@@ -6,7 +6,7 @@ import HomeCarousol from "@/components/homeCarousel/homeCarousel";
 import {MovieSearchByTitleId, AllMovieSearch} from '@/js/movieFind';
 import { MovieSearhByGenre, MovieSearhByYear } from '@/js/movieFind';
 
-const generateMetadata = async({params}) => {
+export const generateMetadata = async({params}) => {
     return{
         title: `Movies | Disflix Official Site`,
         description: `Movies move us like nothing else can, whether they're scary, funny, dramatic, romantic or anywhere in-between. So many titles, so much to experience. Stream now on disflix.in`

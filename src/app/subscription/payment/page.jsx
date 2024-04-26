@@ -7,6 +7,12 @@ import { decryption } from "@/utils/cryptoPay";
 import { notFound } from 'next/navigation';
 import Footer from "@/components/footer/footer";
 
+export const generateMetadata = async({params}) => {
+    return{
+        title: `Payment | Disflix India`
+    }
+}
+
 const PaymentPage = async({searchParams: {s,a}}) =>{
     const decryptPrice = await decryption(a);
     const decryptPlan = await decryption(s);

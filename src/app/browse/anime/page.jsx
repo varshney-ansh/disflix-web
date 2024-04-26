@@ -6,7 +6,7 @@ import {MovieSearchByTitleId, AllMovieSearch} from '@/js/movieFind.js';
 import { AnimeSearhByGenre, AnimeSearhByYear, GetAnimeByTitleId } from '@/js/animeFind';
 import styles from './anime.module.css'
 
-const generateMetadata = async({params}) => {
+export const generateMetadata = async({params}) => {
     return{
         title: `Anime | Disflix Official Site`,
         description: `Watch the best anime from disflix online and stream episodes of Bleach, Naruto, Dragon Ball Super, Attack on Titan, Hunter x Hunter, Fairy Tail, ...`
