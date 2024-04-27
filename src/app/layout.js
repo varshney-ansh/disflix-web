@@ -1,6 +1,5 @@
 import localFont from 'next/font/local';
 import "./globals.css";
-import { GoogleAnalytics } from 'next/third-parties/google'
 
 const disflixFont = localFont({
   src: [
@@ -56,7 +55,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.ico" type="image/png" sizes="any" />
       </head>
       <body className={disflixFont.className}>{children}</body>
-      <GoogleAnalytics gaId="G-3EFQZGMMQ2" />
+      
     </html>
 
       
