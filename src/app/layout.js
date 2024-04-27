@@ -38,15 +38,6 @@ const disflixFont = localFont({
 
 })
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>{children}</body>
-      <GoogleAnalytics gaId="G-3EFQZGMMQ2" />
-    </html>
-  )
-}
-
 export const metadata = {
   title: "Disflix India - Watch Movies Online, Watch Anime Online, Watch TV Shows Online",
   metadataBase: new URL('https://disflix.in/'),
@@ -65,6 +56,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.ico" type="image/png" sizes="any" />
       </head>
       <body className={disflixFont.className}>{children}</body>
+      <GoogleAnalytics gaId="G-3EFQZGMMQ2" />
     </html>
 
       
