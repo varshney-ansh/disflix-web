@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const disflixFont = localFont({
   src: [
@@ -37,6 +38,15 @@ const disflixFont = localFont({
 
 })
 
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <body>{children}</body>
+      <GoogleAnalytics gaId="G-3EFQZGMMQ2" />
+    </html>
+  )
+}
+
 export const metadata = {
   title: "Disflix India - Watch Movies Online, Watch Anime Online, Watch TV Shows Online",
   metadataBase: new URL('https://disflix.in/'),
@@ -47,14 +57,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EFQZGMMQ2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments)}
-            gtag('js', new Date());
-
-            gtag('config', 'G-3EFQZGMMQ2');
-        </script>
         <meta name="google-site-verification" content="XeKIWyUM0hM_A4A8oIzjO5-_naVm6bcxiDN9SVTR0Ps" />
         <meta name="google-adsense-account" content="ca-pub-4033118622575832" />
         <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
