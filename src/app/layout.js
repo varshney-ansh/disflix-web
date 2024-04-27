@@ -56,8 +56,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.ico" type="image/png" sizes="any" />
       </head>
       <body className={disflixFont.className}>{children}</body>
-    </html>
-
-      
+      <GoogleAnalytics gaId="G-3EFQZGMMQ2" />
+    </html>      
   );
 }
