@@ -1,5 +1,6 @@
 import localFont from 'next/font/local';
 import "./globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const disflixFont = localFont({
   src: [
@@ -38,9 +39,9 @@ const disflixFont = localFont({
 })
 
 export const metadata = {
-  title: "Disflix India - Watch Movies Online, Watch Anime Online, Watch TV Shows Online",
+  title: "Disflix.in Sign up for Disflix",
   metadataBase: new URL('https://disflix.in/'),
-  description: "Watch Disflix movies & TV shows online or stream right to your PC, Mac, mobile, tablet and laptop.",
+  description: "Enjoy Kung Fu Panda, Your Name, The Family Star and other Disflix Originals, popular movies, and hit TV shows — all available with your Disflix Membership",
 };
 
 export default function RootLayout({ children }) {
@@ -54,6 +55,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon/favicon.ico" type="image/png" sizes="any" />
       </head>
       <body className={disflixFont.className}>{children}</body>
+      <GoogleAnalytics gaId="G-3EFQZGMMQ2" />
     </html>
 
       

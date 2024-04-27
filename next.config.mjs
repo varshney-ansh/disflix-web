@@ -12,7 +12,7 @@ const nextConfig = {
           },
           {
             protocol: 'https',
-            hostname: 'disflix-anime-media.s3.amazonaws.com',
+            hostname: 'd3d0bkz5kchf6i.cloudfront.net',
           },
         ],
       },
