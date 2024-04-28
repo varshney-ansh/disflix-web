@@ -383,7 +383,7 @@ export function html({ url, text, user }) {
                       >
                         Hi
                         <span class="break-word" style="color: #060de7; word-break: break-all"
-                          >User Name</span
+                          >${user}</span
                         >,
                       </td>
                     </tr>
@@ -489,7 +489,7 @@ export function html({ url, text, user }) {
                             >
                               <a
                                 class="h5"
-                                href="https://www.netflix.com/"
+                                href="${url}"
                                 style="
                                   font-family: NetflixSans-Bold, Helvetica, Roboto,
                                     Segoe UI, sans-serif;
