@@ -24,6 +24,7 @@ export async function signUpWithCredentials(data){
 
         await sendEmail({
             to: data.email,
+            user: data.name,
             url: `${BASE_URL}/ap/verify?token=${token}`,
             text: 'VERIFY EMAIL',
         })
