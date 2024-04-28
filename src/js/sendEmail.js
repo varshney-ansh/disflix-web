@@ -3,7 +3,7 @@ import { html } from './htmlEmail';
 
 const sendEmail = async({to, url, text, user}) =>{
     const transporter = nodemailer.createTransport({
-        host: 'smtp.zoho.eu',
+        host: "smtp.zoho.in",
         port: 465,
         secure: true,
         auth: {
