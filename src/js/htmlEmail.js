@@ -1,6 +1,7 @@
-export function html({url, text, user}){
+export function html({ url, text, user }) {
     return `
-  <div>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style type="text/css">
       @media (max-width: 499px) {
         u + .body .inbox-fix,
@@ -259,7 +260,7 @@ export function html({url, text, user}){
         }
       }
     </style>
-<div
+<body
   class="body"
   style="background-color: #eaeaea; margin-top: 0; padding: 0; margin: 0"
 >
@@ -790,7 +791,7 @@ export function html({url, text, user}){
     </tr>
   </table>
 
-<div>
-</div>
+<body>
+</html>
     `
 }
