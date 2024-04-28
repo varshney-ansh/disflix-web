@@ -304,8 +304,8 @@ export function html({url, text, user}){
                       "
                     >
                       <img 
-                        src="/brand/blackLogo.png"
-                        alt="Netflix"
+                        src="https://disflix.in/brand/blackLogo.png"
+                        alt="Disflix"
                         width="100"
                         border="0"
                         class="undefined"
@@ -670,7 +670,7 @@ export function html({url, text, user}){
                                 style="padding-top: 0"
                               >
                                 <img
-                                  src="/favicon/android-chrome-512x512.png"
+                                  src="https://disflix.in/favicon/android-chrome-512x512.png"
                                   alt
                                   width="35"
                                   border="0"
