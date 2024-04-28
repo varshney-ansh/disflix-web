@@ -23,7 +23,7 @@ export const generateMetadata = async ({ params }) => {
 
     if (anime !== null) {
         return {
-            title: `Watch ${anime.title} | Disflix India`,
+            title: `Watch ${anime.title} Anime | Disflix India`,
             description: anime.desc
         }
     }
