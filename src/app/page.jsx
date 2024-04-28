@@ -27,7 +27,7 @@ const HomePage = async() => {
     return (
         <>
             <Navbar />
-            <h1 style={{display: 'none'}}>Disflix India | Enjoy Kung Fu Panda, Your Name, The Family Star and other Disflix Originals, popular movies, and hit TV shows — all available with your Disflix Membership. </h1>
+            <h1 style={{display: 'none'}}>Disflix India |Enjoy Kung Fu Panda, Your Name, The Family Star and other Disflix Originals, popular movies, and hit TV shows — all available with your Disflix Membership. </h1>
             <div className={styles.container} style={{ background: '#00050D' }}>
                 <HomeCarousol movie1={movieSearch1} movie2={movieSearch2} movie3={movieSearch3}/>
                 <div style={{marginTop: "50px"}}>
