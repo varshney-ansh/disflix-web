@@ -48,8 +48,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <meta property="og:title" content="Watch Movies For Free On Disflix" />
+        <meta property="og:site_name" content="Disflix, Inc" />
+        <meta property="og:url" content="https://disflix.in/" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta property="og:description" content="Watch Movies For Free On Disflix" />
+        <meta name="twitter:image:alt" content="disflix.in" />
         <meta name="google-site-verification" content="XeKIWyUM0hM_A4A8oIzjO5-_naVm6bcxiDN9SVTR0Ps" />
-        <meta name="google-adsense-account" content="ca-pub-4033118622575832" />
         <script type="text/javascript" src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
