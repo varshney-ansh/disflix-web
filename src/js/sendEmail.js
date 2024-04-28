@@ -3,15 +3,17 @@ import { html } from './htmlEmail';
 
 const sendEmail = async({to, url, text, user}) =>{
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.zoho.eu',
+        port: 465,
+        secure: true,
         auth: {
-            user: process.env.EMAIL_USER,
-            pass: process.env.EMAIL_PASSWORD,
+            user: process.env.NO_EMAIL_USER,
+            pass: process.env.NO_EMAIL_PASSWORD,
         }
     })
 
     const mailOptions = {
-        from: process.env.EMAIL_USER,
+        from: process.env.NO_EMAIL_USER,
         to,
         subject: "Verify Your Email",
         html: html({url, text, user})
