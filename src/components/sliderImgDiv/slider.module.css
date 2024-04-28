@@ -147,7 +147,7 @@
     color: #4d4d4d;
     scale: 105%;
 }
-.playbtnm h2{
+.playbtnm i{
     font-size: 20px;
     color: #fff;
     cursor: default;
@@ -403,7 +403,7 @@
     .playBtn{
         padding: 9px !important;
     }
-    .playbtnm h2{
+    .playbtnm i{
         font-size: 16px;
     }
     .container,.bgDark{
