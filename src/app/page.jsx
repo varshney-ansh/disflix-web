@@ -17,11 +17,11 @@ const HomePage = async() => {
 
     const movies = await AllMovieSearch();
 
-    const actionMovies = await MovieSearhByGenre('action, bollywood');
-    const comdyMovies = await MovieSearhByGenre('comedy,bollywood');
-    const horrorMovies = await MovieSearhByGenre('Thriller');
+    const actionMovies = await MovieSearhByGenre('action');
+    const comdyMovies = await MovieSearhByGenre('comedy');
+    const horrorMovies = await MovieSearhByGenre('Hollywood');
     const sciMovies = await MovieSearhByGenre('romance, bollywood');
-    const southMovies = await MovieSearhByGenre('South Indian, crime, bollywood');
+    const southMovies = await MovieSearhByGenre('Thriller');
     const releaseMovies = await MovieSearhByYear('2024');
 
     return (
@@ -34,7 +34,7 @@ const HomePage = async() => {
                     <MovieList heading="New Releases" movies={releaseMovies} />
                     <MovieList heading="Action & Adventure Movies" movies={actionMovies} />
                     <MovieList heading="Comedy Movies" movies={comdyMovies}/>
-                    <MovieList heading="South Indian Movies" movies={southMovies}/>
+                    <MovieList heading="Thriller Movies" movies={southMovies}/>
                     <MovieList heading="Hollywood Movies" movies={horrorMovies}/>
                     <MovieList heading="Romantic Movies" movies={sciMovies}/>
                 </div>
