@@ -59,7 +59,7 @@ const WatchPage = async({ params }) =>{
         }
         
         return(
-            <div><WatchComponent ads={ads} url={videoUrl} img={movieSearch['bannerImg']} /></div>
+            <div><WatchComponent ads={ads} url={videoUrl} img={movieSearch['posterUrl']} /></div>
         )
     }
 
