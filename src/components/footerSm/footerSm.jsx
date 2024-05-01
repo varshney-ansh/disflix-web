@@ -9,7 +9,7 @@ const footerSm = () =>{
                 <Link href='/help/contact'>Help</Link>
             </div>
             <div className={styles.copyright}>
-                <span>© 2024-2025, Disflix, Inc. or its affiliates</span>
+                <span>Disflix © Disflix INC. All other programs and/or marks are the property of their respective owners. All rights reserved./span>
             </div>
         </div>
     )
