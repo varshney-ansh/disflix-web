@@ -31,5 +31,7 @@
 .copyright span{
     color: #555!important;
     font-size: 11px;
+    margin: 0px 20px;
+    text-align: center;
     line-height: 1.465;
 }

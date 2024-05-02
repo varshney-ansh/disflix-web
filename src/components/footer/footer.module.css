@@ -45,6 +45,7 @@
 }
 .copyright span{
     color: #8197a4;
+    margin: 0px 10px;
 }
 
 @media (max-width: 593px){
