@@ -14,6 +14,10 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'd1mad59vqcj3h2.cloudfront.net',
           },
+            {
+            protocol: 'https',
+            hostname: 'images-eu.ssl-images-amazon.com',
+          },
         ],
       },
 };
