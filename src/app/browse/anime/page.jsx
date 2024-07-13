@@ -15,9 +15,9 @@ export const generateMetadata = async({params}) => {
 
 const AnimePage = async() =>{
 
-    const titleid1 = "6733";
-    const titleid2 = "6726";
-    const titleid3 = "6727";
+    const titleid1 = "6722";
+    const titleid2 = "6727";
+    const titleid3 = "6723";
 
     const animeSearch1 = await GetAnimeByTitleId(titleid1);
     const animeSearch2 = await GetAnimeByTitleId(titleid2);
