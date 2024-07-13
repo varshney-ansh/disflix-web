@@ -14,9 +14,9 @@ export const generateMetadata = async({params}) => {
 }
 
 const MoviesPage = async() => {
-    const titleid1 = "8163838";
-    const titleid2 = "8163836";
-    const titleid3 = "8163849";
+    const titleid1 = "81639319";
+    const titleid2 = "8163837";
+    const titleid3 = "8163831";
 
     const movieSearch1 = await MovieSearchByTitleId(titleid1);
     const movieSearch2 = await MovieSearchByTitleId(titleid2);
