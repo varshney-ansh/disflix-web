@@ -7,9 +7,9 @@ import {MovieSearchByTitleId, AllMovieSearch} from '@/js/movieFind';
 import { MovieSearhByGenre, MovieSearhByYear } from '@/js/movieFind';
 
 const HomePage = async() => {
-    const titleid1 = "8163867";
-    const titleid2 = "8163836";
-    const titleid3 = "8163849";
+    const titleid1 = "81639319";
+    const titleid2 = "8163837";
+    const titleid3 = "8163831";
 
     const movieSearch1 = await MovieSearchByTitleId(titleid1);
     const movieSearch2 = await MovieSearchByTitleId(titleid2);
