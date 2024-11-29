@@ -36,25 +36,25 @@ const WatchPage = async({ params }) =>{
         const subscribeDetail = await getSubscriptionDetail(session.user.email);
         if(subscribeDetail !== null){
             if(subscribeDetail.plan_details.name === 'Premium Subscription'){
-                videoUrl = `${movieSearch['videoUrl']}720.m3u8`;
+                videoUrl = `${movieSearch['videoUrl']}`;
                 ads = false;
             }
             if(subscribeDetail.plan_details.name === 'Elite Subscription'){
-                videoUrl = `${movieSearch['videoUrl']}480.m3u8`;
+                videoUrl = `${movieSearch['videoUrl']}`;
                 ads = false;
             }
             if(subscribeDetail.plan_details.name === 'Mega Fan Subscription'){
-                videoUrl = `${movieSearch['videoUrl']}720.m3u8`;
+                videoUrl = `${movieSearch['videoUrl']}`;
                 ads = false;
             }
             if(subscribeDetail.plan_details.name === 'Fan Subscription'){
-                videoUrl = `${movieSearch['videoUrl']}480.m3u8`;
+                videoUrl = `${movieSearch['videoUrl']}`;
                 ads = false;
             }
         }
 
         if(subscribeDetail === null){
-            videoUrl = `${movieSearch['videoUrl']}360.m3u8`;
+            videoUrl = `${movieSearch['videoUrl']}`;
             ads = true;
         }
         
