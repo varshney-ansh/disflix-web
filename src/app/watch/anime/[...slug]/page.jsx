@@ -78,7 +78,7 @@ const AnimeWatchPage = async({params}) =>{
     }
 
     return(
-        <div><WatchComponent ads={ads} url={videoUrl} img={getAnime.episodes[episodeNo].posterImg} /></div>
+        <div><WatchComponent ads={ads} url={`http://ftp.itec.aau.at/datasets/DASHDataset2014/ElephantsDream/15sec/ElephantsDream_15s_onDemand_2014_05_09.mpd`} img={getAnime.episodes[episodeNo].posterImg} /></div>
     )
 }
 
