@@ -59,7 +59,7 @@ const WatchPage = async({ params }) =>{
         }
         
         return(
-            <div><WatchComponent ads={ads} url={`http://ftp.itec.aau.at/datasets/DASHDataset2014/ElephantsDream/15sec/ElephantsDream_15s_onDemand_2014_05_09.mpd`} img={movieSearch['posterUrl']} /></div>
+            <div><WatchComponent ads={ads} url={`https://ftp.itec.aau.at/datasets/DASHDataset2014/ElephantsDream/15sec/ElephantsDream_15s_onDemand_2014_05_09.mpd`} img={movieSearch['posterUrl']} /></div>
         )
     }
 
